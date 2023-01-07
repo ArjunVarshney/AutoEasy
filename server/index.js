@@ -5,6 +5,7 @@ import dotenv from "dotenv";
 import bodyParser from "body-parser";
 import router from "./routes/router.js";
 import makeConnection from "./database/db.js";
+import { UpdateActive } from "./controllers/LocationController.js";
 
 const app = express();
 dotenv.config();
@@ -28,3 +29,7 @@ makeConnection(
   process.env.MONGO_URI,
   process.env.MONGO_PORT
 );
+
+setInterval(() => {
+  UpdateActive();
+}, 1000 * 30);

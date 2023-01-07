@@ -19,4 +19,6 @@ locationRouter.post("/addlocation", addLocation);
 
 locationRouter.get("/getinrange", getWithinField);
 
+locationRouter.post("/delete", deleteUser);
+
 export default locationRouter;

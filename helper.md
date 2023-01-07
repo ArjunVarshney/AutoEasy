@@ -358,6 +358,34 @@ To get drivers and passengers withing 5 kms radius of the current user.
 }
 ```
 
+## http://localhost:8000/location/delete
+
+To get drivers and passengers withing 5 kms radius of the current user.
+
+- type: post
+
+- Required while making request :-
+
+```js
+body: {
+  userid: "63b14535a60e9fa5ab2db179";
+}
+```
+
+- sample response :-
+
+((if no error occurs :-))
+
+```json
+{
+  "success": true,
+  "data": {
+    "acknowledged": true,
+    "deletedCount": 1
+  }
+}
+```
+
 # Contact
 
 ## http://localhost:8000/contact/message
