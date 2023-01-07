@@ -5,6 +5,7 @@ import {
   getPassengers,
   getDrivers,
   getWithinField,
+  deleteUser,
 } from "../controllers/LocationController.js";
 
 const locationRouter = express.Router();
