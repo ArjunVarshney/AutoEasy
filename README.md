@@ -4,9 +4,7 @@ This is a app that may help you find your travelling vehicle you are comfortable
 
 ## Tech stack
 
-- React
 - Mongodb
-- Auth0
 - Node-Express
 
 ## How to run on local machine
